@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #f1f1f1;
+}
+
+.formatting-tab,
+.para-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.formatting-tab h4,
+.para-tab h4
+{
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.input { 
+    margin-bottom: 10px;
+}
+
+.formatting-tab input {
+    width: 70%;
+    padding: 3px 4px;
+}
+
+.formatting-tab select {
+    padding: 3px 4px;
+    width: 25%;
+    border: 0.5px solid #aaa;
+}
+
+.formatting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.para-tab h4{
+    margin-bottom: 10px;
+}
+
+.align-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.align-icon i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container {
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container textarea{
+    resize: none;
+    border: none;
+    width: 500px;
+    height: 500px;
+    font-size: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #999;
+    padding: 50px 40px;
+}
+
+.container textarea:focus {
+    outline: none;
+}
