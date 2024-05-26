@@ -16,12 +16,36 @@
     />
   </head>
   <body>
+    <div class="top-message">
+      <div class="right-side-icon">
+        <i class="fa-solid fa-floppy-disk"></i>
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+        <i class="fa-regular fa-folder-open"></i>
+      </div>
+      <div class="file-name">
+        <p>Document1 - word (Asheel Ahmed Siddiqui)</p>
+      </div>
+      <div class="left-side-icon">
+        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-window-restore"></i>
+        <i class="fa-solid fa-thin fa-xmark"></i>
+      </div>
+    </div>
     <header>
       <div class="formatting-tab">
         <h4>Formatting</h4>
         <div class="font-box">
           <div class="input">
-            <input type="text" disabled placeholder="Font Size" />
+            <select id="fontFamily">
+              <option value="serif">Serif</option>
+              <option value="sans-serif">Sans-Serif</option>
+              <option value="monospace">Monospce</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="cursive">Cursive</option>
+              <option value="verdana">Verdana</option>
+              <option value="impact">Impact</option>
+              <option value="arial">Arial</option>
+            </select>
             <!-- <label>FontSize</label> -->
             <select id="fontsize">
               <option value="11" selected>11</option>
@@ -34,6 +58,9 @@
               <option value="18">18</option>
               <option value="19">19</option>
               <option value="20">20</option>
+              <option value="24">24</option>
+              <option value="28">28</option>
+              <option value="32">32</option>
             </select>
           </div>
           <div class="formatting-item">

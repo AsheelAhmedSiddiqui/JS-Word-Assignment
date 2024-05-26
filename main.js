@@ -7,6 +7,7 @@ let right = document.getElementById("right");
 let left = document.getElementById("left");
 let textarea = document.getElementById("textarea");
 let select = document.getElementById('fontsize');
+let fontFamily = document.getElementById('fontFamily');
 
 bold.addEventListener("click", () => {
   textarea.style.fontWeight = "bold";
@@ -64,5 +65,44 @@ select.addEventListener('click', ()=> {
     }
     else if(select.value == 20) {
         textarea.style.fontSize = "20px";
+    }
+    else if(select.value == 24) {
+        textarea.style.fontSize = "24px";
+    }
+    else if(select.value == 28) {
+        textarea.style.fontSize = "28px";
+    }
+    else if(select.value == 32) {
+        textarea.style.fontSize = "32px";
+    }
+    else {
+        alert('no more font size')
+    }
+})
+
+fontFamily.addEventListener('click', ()=> {
+    if(fontFamily.value == 'serif') {
+        textarea.style.fontFamily = "serif";
+    }
+    else if(fontFamily.value == 'sans-serif') {
+        textarea.style.fontFamily = "sans-serif";
+    }
+    else if(fontFamily.value == 'monospace') {
+        textarea.style.fontFamily = "monospace";
+    }
+    else if(fontFamily.value == 'fantasy') {
+        textarea.style.fontFamily = "fantasy";
+    }
+    else if(fontFamily.value == 'cursive') {
+        textarea.style.fontFamily = "cursive";
+    }
+    else if(fontFamily.value == 'verdana') {
+        textarea.style.fontFamily = "verdana";
+    }
+    else if(fontFamily.value == 'arial') {
+        textarea.style.fontFamily = "arial";
+    }
+    else if(fontFamily.value == 'impact') {
+        textarea.style.fontFamily = "impact";
     }
 })
